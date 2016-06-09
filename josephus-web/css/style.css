@@ -1,0 +1,47 @@
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #26C6DA;
+    box-shadow: 0 1px 0 0 #26C6DA;
+}
+
+.input-field input[type=text]:focus + label {
+    color: #26C6DA;
+}
+
+input:not([type]).pass + label,
+input[type=text].pass + label,
+input[type=password].pass + label,
+input[type=email].pass + label,
+input[type=url].pass + label,
+input[type=time].pass + label,
+input[type=date].pass + label,
+input[type=datetime].pass + label,
+input[type=datetime-local].pass + label,
+input[type=tel].pass + label,
+input[type=number].pass + label,
+input[type=search].pass + label,
+textarea.materialize-textarea.pass + label {
+    width: 100%;
+    pointer-events: none;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+#spinner {
+    display: none;
+}
+
+#retry {
+    display: none;
+}
+
+#survivor_head {
+    font-size: 50px;
+    display: none;
+}
+
+#survivor_ids {
+    font-size: 50px;
+    display: none;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+		<title>Josephus Algorithm</title>
+		<!-- CSS -->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="css/style.css" type="text/css" rel="stylesheet" />
+		<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	</head>
+
+	<body>
+		<div class="container">
+
+		<!-- Header -->
+		<br />
+		<h1 class="header center cyan-text"><strong>J</strong>OSEPHUS &nbsp;<strong>A</strong>LGORITHM</h1>
+
+		<!-- Form -->
+		<br /><br /><br /><br />
+		<div class="row">
+			<div class="row center">
+				<div class="col s12">
+					<p id="survivor_head" class="cyan-text"><strong>S</strong>urvivor(s) : </p>
+					<p id="survivor_ids" class="cyan-text"> </p>
+				</div>
+				<center><a id="retry" class="btn-floating btn-large waves-effect waves-light cyan"><i class="material-icons">replay</i></a></center>
+			</div>
+			<form class="col s12">
+				<div class="row">
+					<div class="col s4">
+						<center><i id="people-icon" class="large material-icons cyan-text">supervisor_account</i></center>
+						<center>
+							<div class="input-field">
+								<input id="people" type="text" class="pass">
+								<label id="people-label" for="people">Number of people</label>
+							</div>
+						</center>
+					</div>
+					<div class="col s4">
+						<center><i id="kill_frequency-icon" class="large material-icons cyan-text">warning</i></center>
+						<center>
+							<div class="input-field">
+								<input id="kill_frequency" type="text" class="pass">
+								<label id="kill_frequency-label" for="kill_frequency">Frequency for killing</label>
+							</div>
+						</center>
+					</div>
+					<div class="col s4">
+						<center><i id="survivors-icon" class="large material-icons cyan-text">perm_identity</i></center>
+						<center>
+							<div class="input-field">
+								<input id="survivors" type="text" class="pass">
+								<label id="survivors-label" for="survivors">Number of survivors</label>
+							</div>
+						</center>
+					</div>
+				</div>
+			</form>
+			<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+			<!-- Submit button -->
+			<div class="row center">
+				<a id="submit" class="btn-floating btn-large waves-effect waves-light cyan"><i class="material-icons">send</i></a>
+			</div>
+		</div>
+
+		<div class="row center">
+			<div id="spinner" class="preloader-wrapper big active">
+				<div class="spinner-layer spinner-blue">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="gap-patch">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+				<div class="spinner-layer spinner-red">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="gap-patch">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+				<div class="spinner-layer spinner-yellow">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="gap-patch">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+				<div class="spinner-layer spinner-green">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="gap-patch">
+						<div class="circle"></div>
+					</div>
+					<div class="circle-clipper right">
+						<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Javascripts -->
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>
