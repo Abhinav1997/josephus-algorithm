@@ -5,7 +5,7 @@ public class Josephus {
 
     public static void main ( String[] args)
     {
-       int numberOfPeople, gap, newGap, counter;
+       int numberOfPeople, gap, newGap, counter, peopleLeft;
        ArrayList<Integer> people = new ArrayList<Integer>();
        Scanner in = new Scanner(System.in);
 
@@ -15,6 +15,9 @@ public class Josephus {
 
        System.out.println("Enter the gap between people: ");
        gap = in.nextInt();
+       
+       System.out.println("Enter the number of people to be left with: ");
+       peopleLeft = in.nextInt();
        
        for (int i = 1; i <= numberOfPeople; i++) {
            people.add(new Integer(i));
@@ -26,7 +29,7 @@ public class Josephus {
        System.out.println("The order is: ");
 
 
-       while (!(people.isEmpty())) {
+       while (people.size() <= peopleLeft) {
           System.out.println(people.remove(counter));
           numberOfPeople = numberOfPeople - 1;
           if (numberOfPeople > 0)
