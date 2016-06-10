@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Josephus {
@@ -29,11 +30,13 @@ public class Josephus {
        System.out.println("The order is: ");
 
 
-       while (people.size() <= peopleLeft) {
+       while (people.size() >= peopleLeft) {
           System.out.println(people.remove(counter));
           numberOfPeople = numberOfPeople - 1;
           if (numberOfPeople > 0)
              counter = (counter + gap - 1) % numberOfPeople;
        }
+       
+       System.out.println("People left: " + Arrays.toString(people.toArray(new Integer[people.size()])));
    }
 }
